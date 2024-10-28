@@ -1,0 +1,328 @@
+/* Dark mode styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    margin: 0; /* Remove default margin */
+}
+
+/* Header styling */
+header {
+    padding: 20px;
+    height: auto; /* Allow header to adjust height based on content */
+    text-align: center; /* Center text in header */
+}
+
+/* Navigation Bar styles */
+.navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it to the top of the viewport */
+    left: 0; /* Aligns it to the left of the viewport */
+    right: 0; /* Aligns it to the right of the viewport */
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 10px 0; /* Padding for the navbar */
+}
+
+.navbar ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline; /* Display items in a row */
+    margin: 0 15px; /* Spacing between items */
+}
+
+.navbar ul li a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Section styling */
+section {
+    height: auto; /* Auto height based on content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Padding for sections */
+}
+
+/* Title styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Additional styling for sections */
+.introduction, .upcoming-events, .past-events, .contact-info {
+    background-color: #1e1e1e; /* Darker background for sections */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    padding-top: 60px; /* Add padding to push content below the fixed navbar */
+    padding-bottom: 60px; /* Add bottom padding for better spacing */
+}
+
+.top-container {
+    position: relative;
+    top: 50px; /* Keep the logo and welcome message below the navbar */
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px; /* Space above icons */
+}
+
+.social-icon {
+    width: 40px; /* Width for icons */
+    height: 40px; /* Height for icons */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Additional styling for the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+/* Section styling for upcoming events */
+.upcoming-events {
+    background-color: #1e1e1e; /* Darker background for the section */
+    width: 100%; /* Full width */
+    padding: 40px 20px; /* Padding for the section */
+}
+
+/* Event container to center content */
+.event-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack events vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Individual event styling */
+.event {
+    background-color: #292929; /* Dark background for events */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside each event box */
+    margin: 10px 0; /* Margin between events */
+    width: 80%; /* Width of event boxes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: left; /* Align text to the left */
+}
+
+.event h3 {
+    margin: 0; /* Remove margin for heading */
+    font-size: 20px; /* Font size for event title */
+}
+
+.event p {
+    margin: 5px 0; /* Margin between paragraphs */
+}
+/* RSVP Button styling */
+.rsvp-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Align buttons properly */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Spacing above and below */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.rsvp-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.more-info-button {
+    display: inline-block; /* Display as a block for padding */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.more-info-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+.introduction {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around the content */
+}
+
+.top-container {
+    
+    margin-bottom: 30px; 
+}
+
+.logo img {
+    max-width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-size: 3em; /* Larger font size for the heading */
+    margin: 10px 0; /* Margins around the heading */
+}
+
+p {
+    font-size: 1.2em; /* Increase font size for paragraphs */
+    margin: 10px 0; /* Margins around paragraphs */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center social icons */
+    margin-top: 20px; /* Space above social icons */
+}
+
+.social-icon {
+    width: 48px; /* Set icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+}
+.introduction {
+    padding: 40px; /* Padding for the whole section */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Limit the width of the section */
+    margin: auto; /* Center the section */
+}
+
+h2 {
+    color: #4CAF50; /* Green color for headings */
+    margin-top: 30px; /* Space above the headings */
+    margin-bottom: 10px; /* Space below the headings */
+}
+
+.box {
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space below each box */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.para-1 {
+    font-style: italic; /* Italics for the introductory paragraph */
+    margin-bottom: 10px; /* Spacing below the introductory paragraph */
+}
+.contact {
+    padding: 40px; /* Padding for the section */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the section */
+}
+
+.feedback-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit the width of the form */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+label {
+    font-weight: bold; /* Bold labels for better visibility */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+@media (max-width: 768px) {
+    .navbar li {
+        display: block; /* Stack navbar items vertically */
+        margin: 10px 0; /* Space between items */
+    }
+
+    .event-container {
+        padding: 5px; /* Less padding on smaller screens */
+    }
+
+    .submit-button {
+        width: 100%; /* Full width for submit button */
+    }
+
+    .event {
+        padding: 15px; /* Adjust padding for events */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .event {
+        padding: 10px; /* Less padding for events */
+        margin: 5px; /* Adjust margin */
+    }
+
+    .feedback-form {
+        padding: 15px; /* Padding for form */
+    }
+
+    .social-icon {
+        width: 36px; /* Smaller icons on mobile */
+    }
+
+    .logo img {
+        width: 70%; /* Adjust logo size for mobile */
+    }
+}
